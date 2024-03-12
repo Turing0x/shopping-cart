@@ -52,6 +52,15 @@ export function CartProvider({ children }) {
       payload: product,
     });
 
+  const totalAmount = () => {
+    let sum = 0;
+    state.forEach((product) => {
+      sum += product.price;
+    });
+
+    return sum;
+  };
+
   const cleanCart = () => dispatch({ type: "clear" });
 
   return (
@@ -61,6 +70,7 @@ export function CartProvider({ children }) {
         addProductToCart,
         cleanCart,
         removeProduct,
+        totalAmount,
       }}
     >
       {children}

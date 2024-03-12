@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import "./Products.css";
 
-import { products } from "../mocks/products.json";
-import { AddToCartIcon, RemoveFromCartIcon } from "./Icons.jsx";
-import { useFilters } from "../hooks/useFilters.jsx";
-import { useCart } from "../hooks/useCart.jsx";
+import { products } from "../../mocks/products.json";
+import { AddToCartIcon, RemoveFromCartIcon } from "../Icons.jsx";
+import { useFilters } from "../../hooks/useFilters.jsx";
+import { useCart } from "../../hooks/useCart.jsx";
 
 export function Products() {
   const { filterProducts } = useFilters();

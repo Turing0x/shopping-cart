@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Filters } from "./Filters.jsx";
+import { Filters } from "../Filters/Filters.jsx";
 
 export function Header() {
   return (

@@ -2,8 +2,8 @@
 import { useId } from "react";
 import "./Filters.css";
 
-import { products } from "../mocks/products.json";
-import { useFilters } from "../hooks/useFilters";
+import { products } from "../../mocks/products.json";
+import { useFilters } from "../../hooks/useFilters";
 
 export function Filters() {
   const categories = products.map((prod) => prod.category);
